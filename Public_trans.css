@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "montserrat";
+  }
+  
+html,body {
+    height: 100%;
+    width: 100%;
+}
+.main{
+    width: 100%;
+    background: rgb(245, 205, 153);
+}
+.top{
+    width: 100%;
+    height: 16vh;
+    position: relative;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+nav{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding:20px 0%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: rgb(245, 205, 153);
+    position: fixed;
+    border-radius: 0 0 30px 30px;
+}
+nav img{
+    width: 280px;
+    height: 70px;
+}
+.opt{
+    display: flex;
+    justify-content: space-between;
+}
+.opt h3{
+    margin-left: 20px;
+    margin-right: 20px;
+    border: 1px solid #0000003c;
+    border-radius: 50px;
+    font-weight: 500;
+    color: #000000bb;
+    transition: all ease 0.4s;
+    position: relative;
+    font-size: 18px;
+    overflow: hidden;
+    padding: 10px 20px;
+}
+
+.opt h3 a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+}
+.opt h3::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(#b6b1ab,#8f8c88);
+    left: 0;
+    bottom: -100%;
+    border-radius: 50%;
+    transition: all ease 0.4s;
+}
+
+.opt h3:hover::after {
+    bottom: 0;
+    border-radius: 0;
+}
+.opt h3 a {
+    color: #000000bb;
+    text-decoration: none;
+    position: relative;
+    z-index: 9;
+}
+
+.opt h3:hover a {
+    color: #ffffff;
+}
+.page1{
+    width: 100%;
+    height: 600vh;
+    background: rgb(245, 205, 153);
+    
+}
+.inner{
+    width: 100%;
+    height: 590vh;
+    margin-top: 2%;
+    background: rgb(245, 216, 161);
+    border-color: black;
+    border-radius: 20px;
+    position: absolute;
+}
+#box{
+    width: 80%;
+    height: 50vh;
+    background: rgb(248, 230, 181);
+    margin-top: 4%;
+    margin-left: 10%;
+    border-radius: 30px;
+    display: flex;
+    
+}
+#box img{
+    border-radius: 20%;
+    padding: 15px 20px 10px 30px;
+    width: 30%;
+    height: 48vh;
+}
+p{
+    font-size: 20px;
+    color: #8f8c88;
+    padding-top: 5%;
+    margin-left: 25%;
+    margin-right: 20%;
+    position: absolute;
+}
+button{
+    position: absolute;
+    margin-top: 37vh;
+    margin-right: 20vh;
+    margin-left: 35%;
+    width: 30vh;
+    height: 8vh;
+    background: transparent;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+a{
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+}
